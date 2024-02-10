@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsha phortpolio webpage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Jost:ital,wght@0,300;0,400;0,700;1,500&family=Poppins:ital,wght@0,400;0,600;1,900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: blue;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        header {
+            height: 45px;
+            background-color: rgb(1, 1, 41);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+        
+        header .first h4 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: chartreuse;
+            position: relative;
+            right: 85px;
+        }
+        
+        header .first h4:hover {
+            color: rgb(238, 95, 95);
+            text-transform: lowercase;
+            font-size: 1.4rem;
+            transition: all.42s ease;
+        }
+        
+        header .second ul {
+            display: flex;
+        }
+        
+        header .second li a {
+            text-decoration: none;
+            list-style-type: none;
+            color: aqua;
+            text-transform: capitalize;
+            font-size: 0.8rem
+        }
+        
+        header .second li {
+            list-style-type: none;
+            margin-right: 60px;
+        }
+        
+        header .second li a:hover {
+            color: cornsilk;
+            border-bottom: 2px dotted orange;
+            transition: all .40s ease-in-out;
+        }
+        
+        main {
+            margin: 5px;
+            height: 450px;
+        }
+        
+        main section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        main section .firstsection {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            top: -30px;
+            right: 78px;
+            display: flex;
+            align-items: center;
+        }
+        
+        main section .firstsection h4 {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: white;
+            text-transform: capitalize;
+            font-style: initial;
+        }
+        
+        main section .firstsection span {
+            color: orange;
+            font-style: oblique;
+            font-size: medium;
+        }
+        
+        main section .secondsection {
+            position: relative;
+            top: 40px;
+            left: 40px;
+            width: 500px;
+            height: 500px;
+        }
+        
+        main section .secondsection img {
+            width: 450Sx;
+            height: 400px;
+            position: relative;
+            left: 30px;
+            top: 0px;
+        }
+        
+        main hr {
+            position: relative;
+            top: -30px;
+        }
+        
+        .heart {
+            width: 100%;
+            height: 600px;
+            top: 30px;
+        }
+        
+        .heart h4 {
+            position: relative;
+            top: 12px;
+            left: 12px;
+            font-size: 1.5rem;
+            color: deeppink;
+            text-decoration: underline wavy orange 1.5px;
+            text-align: center;
+        }
+        
+        #i {
+            color: red;
+            font-size: 12px;
+            position: relative;
+            left: 13px;
+            top: 19px;
+        }
+        
+        .heart .box {
+            background-color: black;
+            width: 85%;
+            height: 2px;
+            position: relative;
+            left: 100px;
+            top: 70px;
+            right: 250px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .heart .box .vertical {
+            width: 2px;
+            height: 93px;
+            background-color: purple;
+            margin: 0px 50px;
+        }
+        
+        .heart .box .vertical .img-top img {
+            position: relative;
+            top: -26px;
+            right: 6px;
+        }
+        
+        .vertical-title {
+            position: relative;
+            top: 70px;
+            right: 20px;
+            width: 200px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .vertical-desc {
+            position: relative;
+            top: 80px;
+            right: 100px;
+            font-size: 8px;
+            width: 300px;
+            height: auto;
+            font-weight: 100;
+        }
+        
+        #o {
+            width: 320px;
+            position: relative;
+            right: 100px;
+        }
+        
+        footer {
+            width: 100%;
+            height: 200px;
+            background-color: black;
+        }
+        
+        footer .items {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            top: 70px;
+        }
+        
+        footer .items div ul li {
+            list-style-type: none;
+            text-transform: capitalize;
+            color: white;
+            border-bottom: 2px solid rgb(5, 5, 55);
+            font-size: 0.8rem
+        }
+        
+        footer .items div {
+            margin-right: 19px;
+        }
+        
+        footer .items div ul li:hover {
+            color: brown;
+            border-bottom: 2px double orange;
+            transition: all .30s ease;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        
+        .butt .create {
+            width: 150px;
+            height: 30px;
+            background-color: black;
+            color: white;
+            text-transform: capitalize;
+            font-weight: 500;
+        }
+        
+        .butt .create:hover {
+            background-color: white;
+            color: black;
+            transition: all .45s ease-in;
+        }
+        
+        .but .manage {
+            margin-top: 10px;
+            width: 100px;
+            height: 23px;
+            background-color: antiquewhite;
+            color: black;
+            text-transform: capitalize;
+            font-weight: 500;
+        }
+        
+        .but .manage:hover {
+            color: white;
+            background-color: black;
+            transition: all .43s ease-out;
+        }
+        
+        #o {
+            position: relative;
+            left: -20px;
+            font-weight: 400px;
+            font-size: 20px
+        }
+        
+        #d {
+            position: relative;
+            left: -20px;
+        }
+        
+        #d ul {
+            color: orange;
+            font-weight: larger;
+            font-size: 0.7rem;
+        }
+        
+        #f {
+            text-transform: uppercase;
+        }
+        
+        .second-heart {
+            width: 100%;
+            height: 600px;
+        }
+        
+        .box1 {
+            width: 85%;
+            height: 2px;
+            background-color: black;
+            position: relative;
+            top: 30%;
+            left: 120px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .second-heart .box1 .horizontal {
+            height: 100px;
+            width: 2px;
+            background-color: purple;
+        }
+        
+        .second-heart .box1 .horizontal .photo {
+            position: relative;
+            top: -30px;
+            right: 8px;
+        }
+        
+        #z {
+            width: 300px;
+            position: relative;
+            top: 80px;
+            right: 50px;
+            font-weight: bolder;
+            font-size: 1rem;
+        }
+        
+        .m {
+            position: relative;
+        }
+        
+        #v {
+            width: 450px;
+            position: relative;
+            top: 90px;
+            right: 30px;
+            color: orange;
+            font-weight: 900;
+            font-size: 0.7rem;
+        }
+        
+        #h1 {
+            position: relative;
+            right: 150px;
+        }
+        
+        #e {
+            position: relative;
+            top: 77px;
+            color: white;
+            font-weight: bolder;
+            font-size: 1rem;
+        }
+        
+        #x {
+            position: relative;
+            top: 80px;
+            font-weight: 900;
+            font-size: 0.7rem;
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="first">
+
+            <h4>Harsha Phortlio</h4>
+
+        </div>
+        <div class="second">
+            <ul>
+                <li>
+                    <a href="/"> Home</a>
+                </li>
+                <li>
+                    <a href="/"> projects</a>
+                </li>
+                <li>
+                    <a href="/"> expreinece</a>
+                </li>
+                <li>
+                    <a href="/"> about</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="body">
+            <div class="firstsection">
+                <div class="title">
+                    <h4>
+                        Iam Akula.harshavardhanRaghvakumar
+                        <br> skilled web developer</h4>
+
+                    <span>This is my phortpholio webpage </span><br> Skills: <span id="element"></span>
+                    <div class="butt">
+                        <button class="create">Download resume</button> </div>
+                    <div class="but">
+                        <button class="manage" onclick="open()">git hub</button> </div>
+                </div>
+
+            </div>
+
+            <div class="secondsection">
+                <img src="po.png" alt="harsha">
+            </div>
+        </section>
+    </main>
+    <hr>
+    <div class="heart">
+
+        <h4 class="text">MY RESUME</h4>
+        <div class="box">
+            <div class="vertical">
+                <div class="img-top">
+                    <img src="yahoo.png" height="20px" width="20px">
+                </div>
+                <div class="vertical-title" id="o">
+
+                    <h3>Information</h3>
+                </div>
+                <div class="vertical-desc" id="d">
+
+                    <ul>
+                        <li id="f">NAME:AkulaHarshaVardhanRagahvaKumar </li>
+                        <li>DOB:17-5-202</li>
+                        <li>VILLAGE:VISSANNAPETA</li>
+                        <li>DISTRICT:NTR</li>
+                        <li>STATE:ANDHRAPRADESH</li>
+                        <li>
+                            NATIONALITY:INDIAN
+                        </li>
+                        <li>MOTHERTOUNGE:TELUGU</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="vertical">
+                <div class="img-top">
+                    <img src="yahoo.png" height="20px" width="20px">
+                </div>
+                <div class="vertical-title" id="o">
+
+                    <h3>COURSES</h3>
+                </div>
+                <div class="vertical-desc" id="d">
+
+                    <ul>
+                        <li>C LANGUAGE </li>
+                        <li>C++ LANGUAGES</li>
+                        <li>PYTHON</li>
+                        <li>JAVA </li>
+                        <li>DATASTRUCTURES THROUGH C</li>
+                        <li>MONGODB</li>
+                        <li>MY SQL</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JAVASCRIPT, ADVANCED JAVASCRIPT</li>
+                        <li>EXPRESS JS,NODE JS</li>
+                        <li>REACT JS</li>
+                        <li>OPERATING SYSTEM</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="vertical">
+                <div class="img-top">
+                    <img src="yahoo.png" height="20px" width="20px">
+                </div>
+                <div class="vertical-title" id="o">
+
+                    <h3> PROJECTS</h3>
+                </div>
+                <div class="vertical-desc" id="d">
+
+                    <ul>
+                        <li>CALCULATOR BY REACTJS FRAMEWORK</li>
+                        <li>CRUD OPREATIONS BY REACTJS</li>
+                        <li>TODO APP BY REACTJS</li>
+                        <li> WEATHER APP BY RACTJS</li>
+                        <li>PHORTPHOLIO BY USING HTML,CSS,JS</li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="second-heart">
+        <div class="box1">
+
+            <div class="horizontal" id="h1">
+                <div class="img-top">
+                    <img src="yahoo.png" height="20px" width="20px" class="photo">
+                </div>
+                <div class="horizontal-title" id="z">
+
+                    <h3> EDUCATIONAL-QUAIFICATIONS</h3>
+                </div>
+                <div class="horizontal-desc" id="v">
+
+                    <ul>
+                        <li>SSC-SRISRI SCHOOL VISSANNAPETA && :92%;</li>
+                        <li>INTER -SRI SRI COLLEGE VISSANNAPETA &&:75%
+                        </li>
+                        <li>BTECH-SRISARATHI INISTITUE OF ENGINEERING AND TECHNOLOGY &&:69%</li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="horizontal">
+                <div class=" img-top ">
+                    <img src="yahoo.png " height="20px " width="20px " class="photo ">
+                </div>
+                <div class="horizontal-title " id="e">
+
+                    <h3>SKILLS </h3>
+                </div>
+                <div class="horizontal-desc " id="x">
+
+                    <ul>
+                        <li>CODING</li>
+                        <li>COMMUNICATION
+                        </li>
+                        <li>HARDWORKING</li>
+                        <li>SELFCONFIDENCE</li>
+                        <li>HANDLING PRESSURE SITUATIONS</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="horizontal ">
+                <div class="img-top ">
+                    <img src="yahoo.png " height="20px " width="20px " class="photo ">
+                </div>
+                <div class="horizontal-title " id="e">
+
+                    <h3> HOBBIESS</h3>
+                </div>
+                <div class="horizontal-desc " id="x">
+
+                    <ul>
+                        <li>PRATICING CODING </li>
+                        <li>PLAYING CRICKET
+                        </li>
+                        <li>LISTENING SONGS</li>
+                        <li>WATCHING CINEMAS</li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class=" footer ">
+        <div class=" items ">
+            <div class="title ">Harsha phortpolio</div>
+            <div class="item1 ">
+                <ul>
+                    <li>home</li>
+                    <li>contact</li>
+                    <li>projects</li>
+                    <li>about</li>
+                </ul>
+            </div>
+            <div class="item2 ">
+                <ul>
+                    <li>home</li>
+                    <li>contact</li>
+                    <li>projects</li>
+                    <li>about</li>
+                </ul>
+            </div>
+            <div class="item1 ">
+                <ul>
+                    <li>home</li>
+                    <li>contact</li>
+                    <li>projects</li>
+                    <li>about</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src=" https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js "></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js "></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['HTML', 'CSS', 'JAVASCRIPT', 'TYPEJS',
+                'MONGODB', 'SQL', 'DATASRUCTURES THROUGH C', 'OS', 'REACTJS ', 'C',
+                'C++', 'JAVA', 'PYTHON', 'ADVANCED JS'
+            ],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+        function open() {
+            window.alert("succesfully loggeg in to the git hub acconut ");
+        }
+    </script>
+</body>
+
+
+</html>
